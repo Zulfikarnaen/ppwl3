@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer components {
+  .tab-item {
+    @apply px-4 py-2 text-sm font-medium border-b-2 transition;
+  }
+
+  .tab-active {
+    @apply border-[#7C3AED] text-[#7C3AED];
+  }
+
+  .tab-inactive {
+    @apply border-transparent text-[#475569]
+           hover:text-[#7C3AED]
+           hover:border-[#C4B5FD];
+  }
+}
